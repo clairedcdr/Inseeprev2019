@@ -45,7 +45,7 @@ test_c3_4 = rmse_prev(formula = get_formula(model_c3_4),
 test_c3_4
 
 hansen.test(model_c3_5)
-test_c3_5 = rmse_prev(formula = get_formula(model_c3_5),
+test_c3_5 = claiRe::rmse_prev(formula = get_formula(model_c3_5),
                       data = data,
                       var_fixes = fixed_coefficients(model_c3_5))
 test_c3_5

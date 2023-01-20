@@ -38,10 +38,6 @@ model_c3_3
 hansen.test(model_c3_3)
 tvlm_c3_3 = tvLM(prod_c3 ~., data = model_c3_3$model)
 
-model_c3_5
-hansen.test(model_c3_5)
-tvlm_c3_5 = tvLM(prod_c3 ~., data = model_c3_5$model)
-
 model_c3_6
 hansen.test(model_c3_6)
 tvlm_c3_6 = tvLM(prod_c3 ~., data = model_c3_6$model)
@@ -87,13 +83,14 @@ tv = lapply(seq_along(model_variant), function(i) {
 
 tvlm_c3_2 = tv[[1]]
 tvlm_c3_4 = tv[[2]]
-tvlm_c5_1 = tv[[3]]
-tvlm_c5_2 = tv[[4]]
-tvlm_c5_3 = tv[[5]]
-tvlm_c5_4 = tv[[6]]
-tvlm_c5_5 = tv[[7]]
-tvlm_c5_6 = tv[[8]]
-tvlm_manuf_3 = tv[[9]]
+tvlm_c3_5 = tv[[3]]
+tvlm_c5_1 = tv[[4]]
+tvlm_c5_2 = tv[[5]]
+tvlm_c5_3 = tv[[6]]
+tvlm_c5_4 = tv[[7]]
+tvlm_c5_5 = tv[[8]]
+tvlm_c5_6 = tv[[9]]
+tvlm_manuf_3 = tv[[10]]
 
 
 
