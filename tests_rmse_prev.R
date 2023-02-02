@@ -46,8 +46,8 @@ test_c3_4
 
 hansen.test(model_c3_5)
 test_c3_5 = claiRe::rmse_prev(formula = get_formula(model_c3_5),
-                      data = data,
-                      var_fixes = fixed_coefficients(model_c3_5))
+                              data = data,
+                              var_fixes = fixed_coefficients(model_c3_5))
 test_c3_5
 
 hansen.test(model_c3_6) #rien ne varie
@@ -102,7 +102,8 @@ hansen.test(model_c5_6)
 test_c5_6 = rmse_prev(formula = prod_c5 ~acquis_ipi1_c5+ins_climat_c5_m3+ins_oscd_c5_m2
                       +diff(ins_tppre_c5_m3,1)+diff(bdf_tuc_c5_m2,1),
                       data = data,
-                      var_fixes = fixed_coefficients(model_c5_6))
+                      var_fixes = fixed_coefficients(model_c5_6),
+                      date = 28)
 test_c5_6
 
 

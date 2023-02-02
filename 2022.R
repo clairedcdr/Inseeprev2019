@@ -29,6 +29,7 @@ data_2022[,"prod_c5"] - ssm_oos_c5_6_2022$best_model_filtering$var_move_1_int_mo
 
 plot(cbind(data_2022[,"prod_c5"],
            data_2022[,"prod_c5"] - ssm_oos_c5_6_2022$best_model_filtering$var_move_1_int_move_100[,ncol(ssm_oos_c5_6_2022$best_model_filtering$var_move_1_int_move_100)],
-           test_c5_6_2022$prevision$prev_tvlm$prevision),
+           test_c5_6_2022$prevision$prev_tvlm$prevision,
+           test_c5_6_2022$prevision$prev_lm$prevision),
      plot.type = "s",
-     col = c("black", "red", "green"))
+     col = c("black", "red", "green", "blue"))
